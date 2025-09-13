@@ -30,7 +30,7 @@ The app allows users to search real-time weather conditions for any location wor
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/yourusername/WeatherApp.git
    cd weather-app
    ```
 
@@ -70,4 +70,5 @@ base = "light"
 
 This enables light mode for a cleaner visual experience.
 ```
+
 
