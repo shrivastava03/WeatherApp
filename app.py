@@ -31,11 +31,17 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+col_top_left, col_top_right = st.columns([3, 1])
+with col_top_right:
+    if st.button("ℹ️ About PM Accelerator"):
+        st.info(
+            "PM Accelerator helps aspiring product managers become industry-ready by offering real-world training, mentorship, and job-focused guidance. Learn more at [Product Manager Accelerator](https://www.linkedin.com/school/pmaccelerator/)"
+        )
+
 tabs = st.tabs(["🏠 Home", "📜 History"])
 
 with tabs[0]:
     st.markdown("<h1 style='text-align: center;'>☀️ Weather App</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center;'>Developed by Ishan Shrivastava</p>", unsafe_allow_html=True)
 
     input_type = st.selectbox(
         "Choose how you want to enter the location:",
@@ -184,3 +190,5 @@ with tabs[1]:
                 st.pyplot(fig)
     else:
         st.info("No history records found.")
+
+st.markdown("<p style='text-align: center; font-size:14px;'>Developed by Ishan Shrivastava</p>", unsafe_allow_html=True)
