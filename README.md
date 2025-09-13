@@ -48,8 +48,8 @@ The app allows users to search real-time weather conditions for any location wor
 ## 📁 Folder Structure
 ```
 weather-app/
-├── weather_app_main.py      # Main Streamlit app file
-├── history_storer.py        # Handles SQLite operations
+├── app.py      # Main Streamlit app file
+├── history.py        # Handles SQLite operations
 ├── helper.py                # Utility functions for coordinates & weather
 ├── requirements.txt
 ├── weather.db               # Created automatically for history storage
@@ -63,10 +63,11 @@ weather-app/
 
 ## 📝 Note
 ```
-Create a file named .streamlit/config.toml in the same directory as weather_app_main.py and add:
+Create a file named .streamlit/config.toml in the same directory as weather.py and add:
 
 [theme]
 base = "light"
 
 This enables light mode for a cleaner visual experience.
 ```
+
